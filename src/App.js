@@ -20,6 +20,7 @@ function App() {
   const [showMessage, setShowMessage] = useState(false);
 
   useEffect(() => {
+    if (!value) return;
     setIsLoading(true);
     setShowMessage(false);
 
